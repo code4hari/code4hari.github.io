@@ -6,6 +6,7 @@
     <title>Hari Sathvik Sanku - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2PGwT3c+5Jo3JmxTM3Fk5vlOFTT7M2O9e03r3GIVUy4D58e0w0xuy0ChlJwMaO+ofLV2XQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -21,12 +22,20 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Hari Sathvik Sanku</h2>
+            <p>A passionate Computer Science student specializing in software engineering, data science, and web development.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
         <p>I'm a Computer Science student at Mercer University with a passion for software engineering, data science, and web development. My interests include building full-stack applications, working with large language models, and exploring machine learning.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="fade-in">
         <h2>Experience</h2>
         <div class="job">
             <h3>Software Engineering Intern</h3>
@@ -55,7 +64,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
         <div class="project">
             <h3>PII Detection</h3>
@@ -75,7 +84,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="fade-in">
         <h2>Technical Skills</h2>
         <ul>
             <li><strong>Languages:</strong> Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R, Swift</li>
@@ -85,13 +94,20 @@
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:harisanku7@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/hari-sathvik-sanku">LinkedIn</a>.</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Hari Sathvik Sanku | <a href="https://github.com/code4hari">GitHub</a></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hari-sathvik-sanku" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/code4hari" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:harisanku7@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
