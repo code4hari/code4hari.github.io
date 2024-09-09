@@ -1,23 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade-in');
+//index.js
 
-    const appearOptions = {
-        threshold: 0,
-        rootMargin: '0px 0px -100px 0px'
-    };
+const hamburger = document.getElementById('hamburger'); 
+const menu = document.querySelector('.menu'); 
 
-    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('appear');
-                appearOnScroll.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
+hamburger.addEventListener('click', function () { 
+    const hamIcon = this.querySelector('.hamburger-icon'); 
+    const crossIcon = this.querySelector('.cross-icon'); 
+    if (hamIcon.style.display === "none") { 
+        hamIcon.style.display = "inline-block"
+        menu.style.display = "none"
+        crossIcon.style.display = "none"
+    } 
+    else { 
+        crossIcon.style.display = "inline-block"
+        hamIcon.style.display = "none"
+        menu.style.display = "block"
+    } 
 });
